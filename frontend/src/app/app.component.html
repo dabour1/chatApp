@@ -1,0 +1,23 @@
+<div class="container my-4">
+  <h1 class="text-center mb-4" id="appTitle">Chat App</h1>
+  <div class="row">
+    <div class="col-md-8">
+      <div id="chatContainer" class="border border-success"></div>
+      <div class="input-group mt-3">
+        <input
+          type="text"
+          class="form-control"
+          id="messageInput"
+          placeholder="Type your message here"
+          aria-label="Message"
+        />
+        <button class="btn btn-info" (click)="sendMessage()">Send</button>
+        <button class="btn btn-danger" (click)="clearChat()">Clear Chat</button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h2>Online Users</h2>
+      <ul class="list-group list-group-flush" id="onlineUsersList"></ul>
+    </div>
+  </div>
+</div>

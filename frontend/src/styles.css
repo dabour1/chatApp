@@ -1,0 +1,29 @@
+#chatContainer {
+  height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+.message {
+  margin-bottom: 10px;
+}
+.message .content {
+  padding: 10px;
+  border-radius: 10px;
+}
+.message .content.me {
+  background-color: #007bff;
+  color: white;
+
+  text-align: right;
+}
+.message .content.other {
+  background-color: #343a40;
+
+  color: white;
+}
+#onlineUsersList {
+  max-height: 200px;
+  overflow-y: auto;
+}
